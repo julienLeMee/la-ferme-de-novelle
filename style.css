@@ -10,6 +10,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/*********************** NAVBAR **************************/
+
+
 .navbar {
   display: flex;
   align-items: center;
@@ -23,18 +26,19 @@ body {
 }
 
 .navbar a {
-  margin: 16px;
   text-decoration: none;
   color: #333;
   font-weight: 300;
+  margin-right: 32px;
 }
 
 .navbar a:hover {
-  margin: 16px;
-  text-decoration: none;
-  color: #333;
+  color: #fc8d80;
   text-decoration: underline;
 }
+
+/*********************** BANNER **************************/
+
 
 .banner {
   display: flex;
@@ -45,20 +49,21 @@ body {
   background: url(/ressources/poule-mange-dans-la-main.jpg);
   background-size: cover;
   background-position: center;
+  margin-bottom: 150px;
 }
 
 .banner h1 {
   color: #fff;
-  font-size: 48px;
+  font-size: 56px;
   text-align: center;
   text-shadow: #333 0px 0px 10px;
 }
 
 .banner h4 {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
-  font-weight: 200;
+  font-weight: 300;
   text-shadow: #333 0px 0px 10px;
   margin-left: 16px;
   margin-right: 16px;
@@ -66,7 +71,7 @@ body {
 
 .banner-btn a {
   text-decoration: none;
-  margin: 16px;
+  margin: 32px;
 }
 
 .btn-produits {
@@ -77,7 +82,7 @@ body {
 	cursor:pointer;
 	color:#ffffff;
   font-weight: 300;
-	font-size:15px;
+	font-size:16px;
 	padding:6px 24px;
 	text-decoration:none;
 }
@@ -91,52 +96,94 @@ body {
 	top:1px;
 }
 
-.btn-contact {
-	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
-  background-color:#e4685d;
-	border-radius:6px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-  font-weight: 300;
-	font-size:15px;
-	padding:6px 24px;
-	text-decoration:none;
-}
+/*********************** CARDS **************************/
 
-.btn-contact:hover {
-  background-color: #fc8d80;
-  text-decoration: underline;
-}
-.btn-contact:active {
-	position:relative;
-	top:1px;
-}
 
 .content {
   margin-top: 32px;
   margin-right: 32px;
   margin-left: 32px;
+  margin-bottom: 32px;
+}
+
+.content h3 {
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .content ul {
   margin: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 150px;
 }
 
-.content li::marker {
-  color: #e4685d;
-  font-size: 24px;
+.content ul li {
+  list-style: none;
+  text-align: center;
+  margin: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 0.1px solid #fc8d80;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  margin-bottom: 48px;
+}
+
+.fa-solid {
+  font-size: 48px;
+  color: #fc8d80;
 }
 
 .content h2 {
-  margin-top: 32px;
+  margin-top: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
 }
 
 .content p {
-  margin-top: 32px;
   margin-right: 32px;
   margin-left: 32px;
 }
+
+
+/*********************** INFOS **************************/
+
+.find-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.find-info img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.who-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.who-info img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+/*********************** FOOTER **************************/
 
 
 .footer {
@@ -146,24 +193,112 @@ body {
   height: 100px;
   border-top: 0.1px solid #333;
   margin-top: 48px;
-  margin: 16px;
+}
+
+.footer-links {
+  margin-left: 32px;
+}
+
+.footer p {
+  margin-left: 24px;
+  font-weight: 300;
+}
+
+.footer-links a {
+  margin-left: 8px;
 }
 
 .footer a {
-  margin: 16px;
+  margin-right: 32px;
   text-decoration: none;
   color: #333;
   font-weight: 300;
 }
 
 .footer a:hover {
-  text-shadow: #fc8d80 0px 0px 16px;
+  color: #fc8d80;
 }
 
 .footer-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-right: 16px;
+  margin-right: 32px;
   font-size: 12px;
+}
+
+.fa-facebook {
+  color: #fc8d80;
+  font-size: 20px;
+}
+
+.fa-instagram {
+  color: #fc8d80;
+  font-size: 20px;
+}
+
+.fa-envelope {
+  color: #fc8d80;
+  font-size: 20px;
+}
+
+
+/*********************** MEDIA QUERIES **************************/
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  .banner {
+    height: 100vh;
+  }
+
+  .banner h1 {
+    font-size: 32px;
+  }
+
+
+
+  .find-info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content h2 {
+    margin-bottom: 32px;
+    margin-top: 64px;
+  }
+
+  .content img {
+    margin-top: -24px;
+  }
+
+  .who-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-links {
+    margin-left: 0px;
+  }
+
+  .footer p {
+    margin: 8px;
+  }
+
+  .footer-info {
+    flex-direction: row;
+    font-size: 10px;
+  }
 }
