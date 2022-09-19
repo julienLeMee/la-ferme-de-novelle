@@ -46,7 +46,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('./ressources/poule-mange-dans-la-main.jpg');
+  background-image: url('/ressources/poule-mange-dans-la-main.jpg');
   background-size: cover;
   background-position: center;
   margin-bottom: 150px;
