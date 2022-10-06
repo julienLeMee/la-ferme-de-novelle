@@ -10,6 +10,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.container {
+  width: 100vw;
+}
+
 /*********************** NAVBAR **************************/
 
 
@@ -46,6 +50,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   background-image: url('ressources/poule-mange-dans-la-main.jpg');
   background-size: cover;
   background-position: center;
@@ -254,6 +259,10 @@ body {
     display: none;
   }
 
+  .navbar img {
+    margin-left: 0;
+  }
+
   .banner {
     height: 100vh;
   }
@@ -262,16 +271,19 @@ body {
     font-size: 32px;
   }
 
-
-
   .find-info{
     display: flex;
     flex-direction: column;
   }
 
+  .content ul {
+    margin-bottom: 0;
+  }
+
   .content h2 {
     margin-bottom: 32px;
     margin-top: 64px;
+    font-size: 24px;
   }
 
   .content img {
@@ -283,6 +295,18 @@ body {
     flex-direction: column;
   }
 
+  .find-info img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+  }
+
+  .who-info img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+  }
+
   .footer {
     flex-direction: column;
     align-items: center;
@@ -290,7 +314,9 @@ body {
   }
 
   .footer-links {
-    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer p {
@@ -298,7 +324,9 @@ body {
   }
 
   .footer-info {
+    display: flex;
     flex-direction: row;
-    font-size: 10px;
+    font-size: 8px;
+    margin: 0 auto;
   }
 }
