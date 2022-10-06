@@ -10,10 +10,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  width: 100vw;
-}
-
 /*********************** NAVBAR **************************/
 
 
@@ -296,14 +292,12 @@ body {
   }
 
   .find-info img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
     object-fit: contain;
   }
 
   .who-info img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
     object-fit: contain;
   }
 
