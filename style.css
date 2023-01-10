@@ -223,6 +223,12 @@ body {
 
 .footer-links a {
   margin-left: 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  color: #fc8d80;
 }
 
 .footer a {
@@ -317,7 +323,7 @@ body {
     object-fit: contain;
   }
 
-  .footer {
+  .footer-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -327,9 +333,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
-  .footer p {
+  .footer-links a {
+    margin-right: 8px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-container p {
     margin: 8px;
   }
 
