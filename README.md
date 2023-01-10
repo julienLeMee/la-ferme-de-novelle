@@ -1,10 +1,10 @@
-# la-ferme-de-novelle
+# La-ferme-de-novelle
 
-![Logo](lien vers l'image du logo.png)
+![Logo](lien-vers-image-logo.png)
 
 ## Sommaire 
 
-La ferme de Novelle est une bonne bourgignonne connue pour ces produits de haute qualités.
+La ferme de Novelle est une ferme bourgignonne connue pour ces produits de haute qualités.
 
 Elle a su se démarquer dans la Bourgonne, ... 
 
