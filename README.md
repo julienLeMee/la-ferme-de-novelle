@@ -1,6 +1,6 @@
 # La-ferme-de-novelle
 
-![Logo](https://github.com/julienLeMee/la-ferme-de-novelle/blob/main/ressources/logo.png)
+![Logo](https://github.com/julienLeMee/la-ferme-de-novelle/blob/main/ressources/logo.jpg)
 
 ## Sommaire 
 
