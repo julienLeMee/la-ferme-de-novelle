@@ -1,6 +1,6 @@
 # La-ferme-de-novelle
 
-![Logo](lien-vers-image-logo.png)
+![Logo](./ressources/logo.png)
 
 ## Sommaire 
 
